@@ -1,0 +1,13 @@
+
+.image{
+    margin: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.image_modal{
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}

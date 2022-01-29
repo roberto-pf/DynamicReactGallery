@@ -1,0 +1,5 @@
+Coleccion de <b>gatos</b>. <br/>
+Este texto de descripción se obtiene del fichero /animales/gatos/description.txt
+
+<b>Configuración de la sección gatos en el data.json.</b>
+<center><img src="../../../doc.png" width="650px"/></center>
