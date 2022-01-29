@@ -1,10 +1,11 @@
 import React from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
+  HashRouter,
   Redirect
 } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const Menu = (props) => {
   }
 
   return (
-    <Router>
+    <HashRouter>
 
       <Nav variant="tabs" onSelect={handleSelect} defaultActiveKey="/home">
         <Nav.Item>
@@ -78,7 +79,7 @@ const Menu = (props) => {
           <NotFound />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
 
