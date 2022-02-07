@@ -1,4 +1,4 @@
-export const jsonData = {
+{
 	"titleSite" : "Dynamic React Gallery",
 	"descriptionSite" : "Galeria dinámica en React",
 	"logo" : "logo192.png",

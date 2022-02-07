@@ -31,10 +31,10 @@ export function Gallery(props) {
     const fetchDataTxt = async () => {
       setIsLoading(true);
       try {
-        const result = await axios("http://" + window.location.host + "/" + category + "/" + type + "/description.txt");
+        const result = await axios(window.location.protocol + "//" + window.location.host + "/" + category + "/" + type + "/description.txt");
         setData(result.data);
       }catch(err){
-        console.log("error http://" + window.location.host + "/" + category + "/" + type + "/description.txt");
+        console.log("error "+ window.location.protocol + "//" + window.location.host + "/" + category + "/" + type + "/description.txt");
       }
       setIsLoading(false);
     };
@@ -71,7 +71,7 @@ export function Gallery(props) {
     setShow(true);
     setItem(k);
     setDescriptionImg("")
-    fetchDataTxt("http://" + window.location.host + "/" + category + "/" + type + "/" + k.key + "/description.txt")
+    fetchDataTxt(window.location.protocol + "//" + window.location.host + "/" + category + "/" + type + "/" + k.key + "/description.txt")
   }
 
   return (
